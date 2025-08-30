@@ -2,3 +2,4 @@ node_modules
 .DS_Store
 .vscode
 .vitepress/cache
+.vitepress/dist
