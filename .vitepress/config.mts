@@ -27,5 +27,7 @@ export default defineConfig({
     ]
   }
   */
+  /*
   base: '/bigiri-docs/',
+  */
 })
