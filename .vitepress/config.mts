@@ -19,6 +19,8 @@ export default defineConfig({
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/oogiri-org/bigiri-docs' },
+      { icon: 'bluesky', link: 'https://bsky.app/profile/bigiri.oogiri.org' },
+      { icon: 'twitter', link: 'https://twitter.com/bigirichan' },
     ],
     logo: 'https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true',
   },
