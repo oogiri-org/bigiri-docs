@@ -6,26 +6,20 @@ export default defineConfig({
   description: 'Documents of bǃgǃrǃ For Beautiful Oogiri Life',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    /*
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
     ],
-
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Documents',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'bǃgǃrǃ ユーザーマニュアル', link: '/user-manual' },
         ]
       }
     ],
-
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-    */
+      { icon: 'github', link: 'https://github.com/oogiri-org/bigiri-docs' },
+    ],
     logo: 'https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true',
   },
   /*
