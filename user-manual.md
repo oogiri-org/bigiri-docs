@@ -1,5 +1,5 @@
 > [!CAUTION]
-> このユーザーマニュアルはbǃgǃrǃ(https://bigiri.oogiri.org)の更新情報を入力データとしてAIにより生成しました。
+> このユーザーマニュアルはbǃgǃrǃ(https://bigiri.oogiri.org)の更新情報を入力データとしてAI(Anthropic Claude)により生成しました。
 > 生成内容は人間によって一切校閲されておらず嘘・大げさ・まぎらわしい叙述を含んでいます。
 
 # bǃgǃrǃ ユーザーマニュアル

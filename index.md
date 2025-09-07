@@ -10,6 +10,6 @@ hero:
     src: https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true
     alt: icon
   actions:
-    - text: bǃgǃrǃ ユーザーマニュアル
+    - text: bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude)
       link: /user-manual
 ---

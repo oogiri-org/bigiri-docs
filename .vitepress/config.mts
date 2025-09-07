@@ -13,7 +13,7 @@ export default defineConfig({
       {
         text: 'Documents',
         items: [
-          { text: 'bǃgǃrǃ ユーザーマニュアル', link: '/user-manual' },
+          { text: 'bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude)', link: '/user-manual' },
         ]
       }
     ],
