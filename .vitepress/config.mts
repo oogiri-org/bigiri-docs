@@ -14,6 +14,7 @@ export default defineConfig({
         text: 'Documents',
         items: [
           { text: 'bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude)', link: '/user-manual' },
+          { text: 'bǃgǃrǃ ユーザーマニュアル (by OpenAI GPT-5)', link: '/user-manual-by-gpt-5' },
         ]
       }
     ],
@@ -22,7 +23,7 @@ export default defineConfig({
       { icon: 'bluesky', link: 'https://bsky.app/profile/bigiri.oogiri.org' },
       { icon: 'twitter', link: 'https://twitter.com/bigirichan' },
     ],
-    logo: 'https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true',
+    logo: { src: 'https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true', alt: 'icon' },
   },
   /*
   base: '/bigiri-docs/',

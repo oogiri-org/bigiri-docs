@@ -12,4 +12,6 @@ hero:
   actions:
     - text: bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude)
       link: /user-manual
+    - text: bǃgǃrǃ ユーザーマニュアル (by OpenAI GPT-5)
+      link: /user-manual-by-gpt-5
 ---
