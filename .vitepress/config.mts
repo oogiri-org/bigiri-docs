@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'bǃgǃrǃ Docs',
   description: 'Documents of bǃgǃrǃ For Beautiful Oogiri Life',
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
