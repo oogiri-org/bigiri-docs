@@ -1,6 +1,6 @@
 > [!CAUTION]
 > <img src="/bigiri-chan.png" align="right" width="80" height="80" />
-> このユーザーマニュアルはbǃgǃrǃ([https://bigiri.oogiri.org](https://bigiri.oogiri.org))の**更新情報**を入力データとしてAI(OpenAI GPT-5)により生成しました。
+> このユーザーマニュアルはbǃgǃrǃ([https://bigiri.oogiri.org](https://bigiri.oogiri.org))の**更新情報**を入力データとしてAI(**OpenAI GPT-5**)により生成しました。
 > 生成内容は人間によって一切校閲されておらず嘘・大げさ・まぎらわしい叙述を含んでいます。
 
 # b!g!r! ユーザーマニュアル（リリースノート準拠）

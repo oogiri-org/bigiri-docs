@@ -16,6 +16,7 @@ export default defineConfig({
         items: [
           { text: 'bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude)', link: '/user-manual/user-manual-by-claude' },
           { text: 'bǃgǃrǃ ユーザーマニュアル (by OpenAI GPT-5)', link: '/user-manual/user-manual-by-gpt-5' },
+          { text: 'bǃgǃrǃ ユーザーマニュアル (by GitHub Copilot)', link: '/user-manual/user-manual-by-copilot' }, 
         ]
       }
     ],
