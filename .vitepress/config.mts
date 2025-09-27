@@ -14,8 +14,8 @@ export default defineConfig({
       {
         text: 'Documents',
         items: [
-          { text: 'bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude)', link: '/user-manual' },
-          { text: 'bǃgǃrǃ ユーザーマニュアル (by OpenAI GPT-5)', link: '/user-manual-by-gpt-5' },
+          { text: 'bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude)', link: '/user-manual/user-manual-by-claude' },
+          { text: 'bǃgǃrǃ ユーザーマニュアル (by OpenAI GPT-5)', link: '/user-manual/user-manual-by-gpt-5' },
         ]
       }
     ],
