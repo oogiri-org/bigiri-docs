@@ -12,8 +12,8 @@ hero:
   actions:
     - text: bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude)
       link: /user-manual/user-manual-by-claude
-    - text: bǃgǃrǃ ユーザーマニュアル (by OpenAI GPT-5-Codex)
+    - text: bǃgǃrǃ ユーザーマニュアル (by OpenAI Codex with GPT-5-Codex)
       link: /user-manual/user-manual-by-gpt-5
-    - text: bǃgǃrǃ ユーザーマニュアル (by GitHub Copilot)
+    - text: bǃgǃrǃ ユーザーマニュアル (by GitHub Copilot with Claude Sonnet 4.5)
       link: /user-manual/user-manual-by-copilot
 ---
