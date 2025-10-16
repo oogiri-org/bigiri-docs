@@ -26,6 +26,13 @@ export default defineConfig({
       { icon: 'twitter', link: 'https://twitter.com/bigirichan' },
     ],
     logo: { src: 'https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true', alt: 'icon' },
+    lastUpdated: {
+      formatOptions: {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      },
+    },
   },
   /*
   base: '/bigiri-docs/',
