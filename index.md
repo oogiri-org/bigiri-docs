@@ -16,6 +16,6 @@ hero:
       link: /user-manual/user-manual-by-gpt-5
     - text: bǃgǃrǃ ユーザーマニュアル (by GitHub Copilot with Claude Sonnet 4.5)
       link: /user-manual/user-manual-by-copilot
-    - text: bǃgǃrǃ ユーザーマニュアル (by Google Gemini 2.5 Pro)
+    - text: bǃgǃrǃ ユーザーマニュアル (by Google Gemini 3 Pro)
       link: /user-manual/user-manual-by-gemini
 ---
