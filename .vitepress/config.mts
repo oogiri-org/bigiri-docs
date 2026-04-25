@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'bǃgǃrǃ Docs',
   description: 'Documents of bǃgǃrǃ For Beautiful Oogiri Life',
   lastUpdated: true,
+  lang: 'ja-JP',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -35,6 +36,8 @@ export default defineConfig({
         day: 'numeric',
       },
     },
+    outlineTitle: '目次',
+    returnToTopLabel: '先頭に戻る',
   },
   /*
   base: '/bigiri-docs/',
