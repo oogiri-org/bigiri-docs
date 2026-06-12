@@ -15,6 +15,7 @@ export default defineConfig({
       {
         text: 'Documents',
         items: [
+          { text: 'bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude Fable)', link: '/user-manual/user-manual-by-claude-fable' },
           { text: 'bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude Opus)', link: '/user-manual/user-manual-by-claude-opus' },
           { text: 'bǃgǃrǃ ユーザーマニュアル (by OpenAI Codex with GPT-5)', link: '/user-manual/user-manual-by-gpt-5' },
           { text: 'bǃgǃrǃ ユーザーマニュアル (by Google Gemini 3 Pro)', link: '/user-manual/user-manual-by-gemini' },
