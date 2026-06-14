@@ -48,8 +48,8 @@ export default defineConfig({
   ],
   markdown: {
     anchor: {
-      // slugify function to replace spaces and dots with hyphens and convert to lowercase
-      slugify: (s) => s.trim().replace(/\p{P}+/gu, '').replace(/\s+/g, '-').toLowerCase()
+      // slugify function to remove punctuation, replace spaces with hyphens and convert to lowercase
+      slugify: (s) => s.trim().replace(/\p{P}/gu, '').replace(/\s+/g, '-').toLowerCase(),
     }
   },
 })
