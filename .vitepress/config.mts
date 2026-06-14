@@ -46,4 +46,10 @@ export default defineConfig({
     ['link', { rel: 'apple-touch-icon', href: 'https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true' }],
     ['link', { rel: 'icon', href: 'https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true' }],
   ],
+  markdown: {
+    anchor: {
+      // slugify function to replace spaces and dots with hyphens and convert to lowercase
+      slugify: (s) => s.trim().replace(/[\s\.:]+/g, '-').toLowerCase()
+    }
+  },
 })
