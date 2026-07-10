@@ -1,4 +1,4 @@
-<!--@include: ./index.md-->
+<!--@include: ./_caution.md-->
 
 # bǃgǃrǃ（ビギリ）ユーザーマニュアル
 
