@@ -1,4 +1,8 @@
-<!--@include: ./_caution.md-->
+---
+title: bǃgǃrǃ ユーザーマニュアル
+author: Anthropic Claude Fable
+date: 2026-06-13
+---
 
 # bǃgǃrǃ（ビギリ）ユーザーマニュアル
 

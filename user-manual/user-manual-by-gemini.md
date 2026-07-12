@@ -1,4 +1,8 @@
-<!--@include: ./_caution.md-->
+---
+title: bǃgǃrǃ ユーザーマニュアル
+author: Google Gemini 3 Pro
+date: 2026-05-03
+---
 
 # bǃgǃrǃ ユーザーマニュアル
 

@@ -1,4 +1,8 @@
-<!--@include: ./_caution.md-->
+---
+title: bǃgǃrǃ ユーザーマニュアル
+author: Anthropic Claude Opus
+date: 2026-05-30
+---
 
 # bǃgǃrǃ（ビギリ）ユーザーマニュアル
 
