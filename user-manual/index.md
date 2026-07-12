@@ -11,6 +11,6 @@ import { data } from './index.data.ts'
 
 <ul>
   <li v-for="post of data">
-    <a v-bind:href="post.url">{{ post.frontmatter.title }} by {{ post.frontmatter.author }} on {{ new Date(post.frontmatter.date).toLocaleDateString('ja-JP', { year: 'numeric', month: '2-digit', day: '2-digit' }) }}</a>
+    <a v-bind:href="post.url">{{ post.frontmatter.title }} by {{ post.frontmatter.author }}</a> [{{ new Date(post.frontmatter.date).toLocaleDateString('ja-JP', { year: 'numeric', month: '2-digit', day: '2-digit' }) }}]
   </li>
 </ul>

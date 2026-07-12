@@ -1,3 +1,6 @@
+import fs from 'node:fs'
+import path from 'node:path'
+import matter from 'gray-matter'
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
@@ -11,18 +14,13 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
     ],
-    sidebar: [
-      {
-        text: 'Documents',
-        items: [
-          { text: 'bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude Fable)', link: '/user-manual/user-manual-by-claude-fable' },
-          { text: 'bǃgǃrǃ ユーザーマニュアル (by Anthropic Claude Opus)', link: '/user-manual/user-manual-by-claude-opus' },
-          { text: 'bǃgǃrǃ ユーザーマニュアル (by OpenAI Codex with GPT-5.6 Sol)', link: '/user-manual/user-manual-by-gpt-5.6-sol' },
-          { text: 'bǃgǃrǃ ユーザーマニュアル (by OpenAI Codex with GPT-5.5)', link: '/user-manual/user-manual-by-gpt-5' },
-          { text: 'bǃgǃrǃ ユーザーマニュアル (by Google Gemini 3 Pro)', link: '/user-manual/user-manual-by-gemini' },
-        ]
-      }
-    ],
+    sidebar: {
+      '/user-manual/': [{
+        text: 'bǃgǃrǃ ユーザーマニュアル',
+        link: '/user-manual/',
+        items: generateSidebar(path.resolve(__dirname, '../user-manual'), '/user-manual/')
+      }]
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/oogiri-org/bigiri-docs' },
       { icon: 'bluesky', link: 'https://bsky.app/profile/bigiri.oogiri.org' },
@@ -54,3 +52,39 @@ export default defineConfig({
     }
   },
 })
+
+function generateSidebar(dirPath: string, basePath: string) {
+  const files = fs.readdirSync(dirPath)
+  const items = [] as { text: string; link: string; date: Date }[]
+
+  files.forEach(file => {
+    // _で始まらないMarkdownファイルで index.md 以外を対象にする
+    if (file.startsWith('_') || !file.endsWith('.md') || file == 'index.md') {
+      return
+    }
+
+    const fullPath = path.join(dirPath, file)
+    const fileContent = fs.readFileSync(fullPath, 'utf-8')
+
+    // gray-matterでフロントマターと本文をパース
+    const { data } = matter(fileContent)
+
+    // 拡張子を除いたファイル名をリンク用に使用
+    const fileNameWithoutExt = path.basename(file, '.md')
+
+    // フロントマターに title または date がない場合のフォールバック（デフォルト値）
+    const text = `${data.title ?? fileNameWithoutExt} by ${data.author ?? 'Unknown Author'}`
+    const date = data.date ? new Date(data.date) : new Date(0) // 日付がないものは最古扱い
+
+    items.push({
+      text,
+      link: `${basePath}${fileNameWithoutExt}`,
+      date
+    })
+  })
+  
+  return items
+    .sort((a, b) => a.date.getTime() - b.date.getTime()) // date（日付）でソート：古い順（昇順）
+    .map(({ text, link }) => ({ text, link })) // VitePressが求める形式（textとlinkのみ）に整形
+    .reverse() // 逆順にして新しい順（降順）にする
+}
