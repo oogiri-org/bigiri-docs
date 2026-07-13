@@ -1,7 +1,9 @@
 # bǃgǃrǃ ユーザーマニュアル
 
 <script setup>
-import { data } from './index.data.ts'
+import { useData } from 'vitepress'
+
+const { theme } = useData()
 </script>
 
 > [!CAUTION]
@@ -10,7 +12,7 @@ import { data } from './index.data.ts'
 > 生成内容は人間によって校閲されておらず嘘・大げさ・まぎらわしい記述を含んでいる場合があります。
 
 <ul>
-  <li v-for="post of data">
-    <a v-bind:href="post.url">{{ post.frontmatter.title }} by {{ post.frontmatter.author }}</a> [{{ new Date(post.frontmatter.date).toLocaleDateString('ja-JP', { year: 'numeric', month: '2-digit', day: '2-digit' }) }}]
+  <li v-for="item of theme.sidebar['/user-manual/'][0].items" v-bind:key="item.link">
+    <a v-bind:href="item.link">{{ item.text }}</a>
   </li>
 </ul>

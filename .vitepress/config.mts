@@ -79,7 +79,7 @@ function generateSidebar(dirPath: string, basePath: string) {
     items.push({
       text,
       link: `${basePath}${fileNameWithoutExt}`,
-      date
+      date,
     })
   })
   
