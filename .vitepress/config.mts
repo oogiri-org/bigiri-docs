@@ -56,11 +56,10 @@ export default defineConfig({
 function generateSidebar(dirPath: string, basePath: string) {
   const files = fs.readdirSync(dirPath)
   const items = [] as { text: string; link: string; date: Date }[]
-
-  files.forEach(file => {
+  for (const file of files) {
     // _で始まらないMarkdownファイルで index.md 以外を対象にする
     if (file.startsWith('_') || !file.endsWith('.md') || file == 'index.md') {
-      return
+      continue
     }
 
     const fullPath = path.join(dirPath, file)
@@ -81,8 +80,7 @@ function generateSidebar(dirPath: string, basePath: string) {
       link: `${basePath}${fileNameWithoutExt}`,
       date,
     })
-  })
-  
+  }
   return items
     .sort((a, b) => a.date.getTime() - b.date.getTime()) // date（日付）でソート：古い順（昇順）
     .map(({ text, link }) => ({ text, link })) // VitePressが求める形式（textとlinkのみ）に整形
