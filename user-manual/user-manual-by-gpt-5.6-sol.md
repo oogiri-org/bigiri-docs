@@ -1,6 +1,6 @@
 ---
 title: bǃgǃrǃ ユーザーマニュアル
-author: OpenAI Codex with GPT-5.6 Sol
+author: OpenAI GPT-5.6 Sol
 date: 2026-07-11
 ---
 

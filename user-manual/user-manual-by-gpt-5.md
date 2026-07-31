@@ -1,6 +1,6 @@
 ---
 title: bǃgǃrǃ ユーザーマニュアル
-author: OpenAI Codex with GPT-5.5
+author: OpenAI GPT-5.5
 date: 2026-05-03
 ---
 
