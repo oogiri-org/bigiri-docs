@@ -1,6 +1,6 @@
 ---
 title: bǃgǃrǃ ユーザーマニュアル
-author: Anthropic Claude Fable
+author: Anthropic Claude Fable 5
 date: 2026-06-13
 ---
 

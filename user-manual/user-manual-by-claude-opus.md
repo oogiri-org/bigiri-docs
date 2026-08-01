@@ -1,6 +1,6 @@
 ---
 title: bǃgǃrǃ ユーザーマニュアル
-author: Anthropic Claude Opus
+author: Anthropic Claude Opus 5
 date: 2026-07-26
 ---
 
