@@ -26,7 +26,7 @@ export default defineConfig({
       { icon: 'bluesky', link: 'https://bsky.app/profile/bigiri.oogiri.org' },
       { icon: 'twitter', link: 'https://twitter.com/bigirichan' },
     ],
-    logo: { src: 'https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true', alt: 'icon' },
+    logo: { src: 'https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@main/2D/png/512/emoji_u1f984.png', alt: 'icon' },
     lastUpdated: {
       formatOptions: {
         year: 'numeric',
@@ -41,9 +41,9 @@ export default defineConfig({
   base: '/bigiri-docs/',
   */
   head: [
-    ['link', { rel: 'shortcut icon', href: 'https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true' }],
-    ['link', { rel: 'apple-touch-icon', href: 'https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true' }],
-    ['link', { rel: 'icon', href: 'https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true' }],
+    ['link', { rel: 'shortcut icon', href: 'https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@main/2D/png/512/emoji_u1f984.png' }],
+    ['link', { rel: 'apple-touch-icon', href: 'https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@main/2D/png/512/emoji_u1f984.png' }],
+    ['link', { rel: 'icon', href: 'https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@main/2D/png/512/emoji_u1f984.png' }],
   ],
   markdown: {
     anchor: {

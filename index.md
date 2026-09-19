@@ -7,7 +7,7 @@ hero:
   text: "For Beautiful Oogiri Life"
   tagline: Documents
   image:
-    src: https://github.com/googlefonts/noto-emoji/blob/main/png/512/emoji_u1f984.png?raw=true
+    src: https://cdn.jsdelivr.net/gh/googlefonts/noto-emoji@main/2D/png/512/emoji_u1f984.png
     alt: icon
   actions:
     - text: bǃgǃrǃ ユーザーマニュアル
