@@ -23,18 +23,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
 
       - name: Configure Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v6
 
       # Runs a set of commands using the runners shell
       - name: Build
@@ -43,7 +43,7 @@ jobs:
           npm run build
 
       - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: .vitepress/dist
 
