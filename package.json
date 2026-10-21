@@ -1,5 +1,5 @@
 {
-  "version": "1.0.30",
+  "version": "1.0.31",
   "devDependencies": {
     "@types/node": "26.6.5",
     "gray-matter": "4.0.3",
