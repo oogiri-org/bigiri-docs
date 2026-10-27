@@ -13,8 +13,4 @@ const { theme } = useData()
 > AIの選定は[Artificial Analysis Intelligence Index](https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index)のScoreを参考にしています。
 > 各ユーザーマニュアルのMarkdown形式のファイルがGitHub上のリポジトリー[oogiri-org/bigiri-docs](https://github.com/oogiri-org/bigiri-docs)の[user-manual](https://github.com/oogiri-org/bigiri-docs/tree/main/user-manual)にあります。
 
-<ul>
-  <li v-for="item of theme.sidebar['/user-manual/'][0].items" v-bind:key="item.link">
-    <a v-bind:href="item.link">{{ item.text }}</a>
-  </li>
-</ul>
+<UserManualList />

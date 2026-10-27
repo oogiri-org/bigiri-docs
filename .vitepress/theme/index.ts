@@ -2,11 +2,13 @@ import type { Theme } from 'vitepress'
 
 import DefaultTheme from 'vitepress/theme'
 import { inBrowser } from 'vitepress'
+import UserManualList from './UserManualList.vue'
 import './index.css'
 
 export default {
   extends: DefaultTheme,
-  enhanceApp({ router }) {
+  enhanceApp({ app, router }) {
+    app.component('UserManualList', UserManualList)
     if (inBrowser) {
       router.onAfterRouteChange = async () => {
         const mermaid = (await import('mermaid')).default
